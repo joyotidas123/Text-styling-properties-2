@@ -1,0 +1,51 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color:black;
+    color:skyblue;
+}
+
+h1 {
+    color: purple
+}
+
+/* Attribute Selector */
+input[type="text"]{
+    background-color:green;
+}
+
+/* Child Selector */
+ul>li {
+    color: red;
+}
+/* Sibling Selector */
+h1+h2 {
+    color:orange;
+}
+/* :hover Pseudo-class */
+li:hover {
+   font-size: 20px;
+}
+/* :nth-child(n) Pseudo-class */
+li:nth-child(5) {
+   background-color: aqua;
+}
+
+/* :not(selector) Pseudo-class */
+p:not:(:first-of-type) {
+   text-decoration: underline;
+}
+/* ::before Pseudo-element */
+a::before {
+   content:"🚀"
+}
+
+/* ::after Pseudo-element */
+a::after {
+   content: "✨";
+}
+
+/* ::first-letter Pseudo-element */
+p::first-letter {
+   font-size: 29px;
+   color:aqua;
+}
